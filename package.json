@@ -1,6 +1,6 @@
 {
   "name": "robofriends",
-  "homepage": "https://conuko.github.io/robofriends",
+  "homepage": "https://conuko.github.io/robofriends-with-hooks",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
