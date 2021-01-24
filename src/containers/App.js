@@ -17,6 +17,13 @@ function App() {
         };
     */
 
+    // Similar to componentDidMount I use the Hook "useEffect":
+    useEffect(() => {
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(response => response.json())
+            .then(users => {setRobots(users)});
+    }, []) // the [] makes sure that useEffect just runs once, when the component is mounted the first time (exactly like ComponentDidMount)
+
     const onSearchChange = (event) => {
         setSearchfield(event.target.value);
     };
