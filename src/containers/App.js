@@ -9,14 +9,6 @@ function App() {
     const [robots, setRobots] = useState([]);
     const [searchfield, setSearchfield] = useState('');
 
-    /*
-    componentDidMount() {
-        fetch('https://jsonplaceholder.typicode.com/users')
-        .then(response => response.json())
-        .then(users => {this.setState({ robots: users})});
-        };
-    */
-
     // Similar to componentDidMount I use the Hook "useEffect":
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
